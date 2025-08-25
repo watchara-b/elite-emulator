@@ -1,51 +1,52 @@
-/* ตั้งค่าพื้นฐานสำหรับทั้งหน้า */
-body {
-    font-family: 'Sarabun', sans-serif; /* ใช้ฟอนต์ที่อ่านง่าย */
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-}
+/* ========== โค้ดที่เพิ่มเข้ามาใหม่ ========== */
 
-header h1 {
-    color: #4a4a4a;
-    margin-bottom: 20px;
-}
-
-main {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
+/* เส้นคั่น */
+hr {
     border: none;
-    padding: 12px 25px;
-    font-size: 1em;
+    height: 1px;
+    background-color: #ddd;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* กล่องครอบปุ่ม GCloud */
+.cloud-login h2 {
+    margin-bottom: 10px;
+    color: #202124;
+}
+
+.cloud-login p {
+    margin-top: 0;
+    color: #5f6368;
+}
+
+/* สไตล์ของปุ่ม GCloud (ใช้ร่วมกัน) */
+.gcp-button {
+    display: inline-block;
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    font-weight: bold;
+    padding: 12px 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
 }
 
-button:hover {
-    background-color: #0056b3;
+.gcp-button:hover {
+    transform: translateY(-2px); /* ทำให้ปุ่มขยับขึ้นเล็กน้อยเมื่อเมาส์ชี้ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #777;
+/* สีปุ่ม Cloud Console */
+.gcp-button.console {
+    background-color: #4285F4; /* สีน้ำเงินของ Google */
+    color: white;
 }
+
+/* สีปุ่ม Cloud Shell */
+.gcp-button.shell {
+    background-color: #f1f3f4;
+    color: #202124; /* สีเทาเข้ม */
+    border: 1px solid #dadce0;
+}
+/* ======================================= */
