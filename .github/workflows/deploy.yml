@@ -10,7 +10,7 @@ on:
 # กำหนดค่า Environment Variables
 env:
   PROJECT_ID: 1085975367966 # << เปลี่ยนเป็น Project ID ของคุณ
-  SERVICE_NAME: elite-app # << เปลี่ยนเป็นชื่อ Service ที่คุณต้องการ
+  SERVICE_NAME: github-actions-deployer # << เปลี่ยนเป็นชื่อ Service ที่คุณต้องการ
   REGION: asia-southeast1 # << เปลี่ยนเป็น Region ของคุณ
 
 jobs:
