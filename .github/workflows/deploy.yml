@@ -1,0 +1,64 @@
+# .github/workflows/deploy.yml
+
+name: Build and Deploy to Cloud Run
+
+# 1. กำหนดว่าจะให้ Workflow นี้ทำงานเมื่อไหร่
+on:
+  push:
+    branches: [ "main" ] # ทำงานทุกครั้งที่มีการ push ไปยัง branch 'main'
+
+# กำหนดค่า Environment Variables
+env:
+  PROJECT_ID: 1085975367966 # << เปลี่ยนเป็น Project ID ของคุณ
+  SERVICE_NAME: elite-app # << เปลี่ยนเป็นชื่อ Service ที่คุณต้องการ
+  REGION: asia-southeast1 # << เปลี่ยนเป็น Region ของคุณ
+
+jobs:
+  build-and-push:
+    name: Build and Push Image
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository }}:${{ github.sha }}
+
+  deploy:
+    name: Deploy to Cloud Run
+    needs: build-and-push # ต้องรอให้ Job 'build-and-push' ทำงานเสร็จก่อน
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Authenticate to Google Cloud
+        uses: 'google-github-actions/auth@v1'
+        with:
+          workload_identity_provider: 'projects/1085975367966/locations/global/workloadIdentityPools/github-pool/providers/github-provider' # << ต้องตั้งค่าใน Google Cloud
+          service_account: 'github-actions-deployer@magnetic-cairn-352507.iam.gserviceaccount.com' # << ต้องตั้งค่าใน Google Cloud
+
+      - name: Deploy to Cloud Run
+        uses: 'google-github-actions/deploy-cloudrun@v1'
+        with:
+          service: ${{ env.SERVICE_NAME }}
+          region: ${{ env.REGION }}
+          image: ghcr.io/${{ github.repository }}:${{ github.sha }}
