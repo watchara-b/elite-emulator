@@ -1,0 +1,199 @@
+🎮 Stable Diffusion Prompts for RTS Game Assets (2D Style / 1:1 Ratio)
+
+Master Settings (ตั้งค่าพื้นฐานสำหรับสไตล์ 2D และพื้นหลังใส):
+
+Aspect Ratio: 1:1 (กว้าง x ยาว เท่ากัน เช่น 512x512, 768x768 หรือ 1024x1024)
+
+Negative Prompt (ใส่ทุกครั้ง): 3d, render, cgi, realistic, photorealistic, octane render, unreal engine, (worst quality, low quality:1.4), text, watermark, signature, ugly, deformed, noisy, blurry, cluttered background, extra limbs, mutated, out of frame, cropped, background, scenery, landscape
+
+แนะนำ Checkpoint: Checkpoint สาย Anime/2D Illustration หรือโมเดลสาย 2D Game Asset
+
+🇹🇭 1. Thailand: The Siam Syndicate
+
+Theme: Psycho-Chemical Tech, Scrap-Tech, Yuri-inspired, Mind control, Pink & Rust aesthetics.
+
+1.1 Command Center (ฐานบัญชาการ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS game asset of a futuristic Thai temple serving as a military command center, scrap-metal engineering, Yuri-style psycho-chemical tech, glowing pink neon psychic energy, rusted steel mixed with traditional Thai roofs, crisp lines, cel-shaded, transparent background, isolated.
+
+[Units: 20 ยูนิตของกองทัพสยามซินดิเคต]
+1.2 Scrap-Tech Ore Miner (รถขุดแร่): 2D isometric digital illustration, hand-drawn RTS harvester vehicle, heavily modified scrap-tech truck, heavy drilling equipment gathering golden ore, glowing pink psycho-chemical storage tanks, Yuri faction vibe, transparent background, isolated.
+1.3 Tuk-Tuk Rocket Buggy (รถตุ๊กตุ๊กติดจรวด): 2D isometric digital illustration, hand-drawn RTS fast scout vehicle, armored scrap-tech Thai Tuk-Tuk, rear turbojet engine, mounted rocket launchers, emitting thick smoke, transparent background, isolated.
+1.4 Naga Submersible (หุ่นยนต์งูทะเล): 2D isometric digital illustration, hand-drawn RTS amphibious mecha of a mechanical Thai Naga serpent, scrap-metal scales, firing a sonic wave attack, glowing pink accents, transparent background, isolated.
+1.5 Syndicate Initiate (ทหารราบพลังจิต): 2D isometric digital illustration, hand-drawn RTS infantry, cultist soldier with a glowing pink cybernetic headpiece, shooting a psychic energy beam from his hands, scrap-tech armor, transparent background, isolated.
+1.6 Scrap-Gunner (ทหารปืนกลหนัก): 2D isometric digital illustration, hand-drawn RTS heavy infantry, rugged soldier holding a massive makeshift minigun welded from junk, rusted heavy armor, smoking cigar, transparent background, isolated.
+1.7 Lotus Grenadier (ทหารปาแก๊สหลอนประสาท): 2D isometric digital illustration, hand-drawn RTS infantry, soldier throwing a glowing pink chemical grenade, wearing a heavy gas mask, toxic fumes, transparent background, isolated.
+1.8 Psycho-Brute (ทหารยักษ์กลายพันธุ์): 2D isometric digital illustration, hand-drawn RTS heavy infantry, massive mutated brute with exaggerated muscles, veins glowing pink, swinging a rusted steel street light pole as a weapon, transparent background, isolated.
+1.9 Scavenger Bike (มอเตอร์ไซค์สอดแนม): 2D isometric digital illustration, hand-drawn RTS fast vehicle, scrap-metal motorcycle with a front-mounted spinning circular saw blade, rider in a ragged poncho, transparent background, isolated.
+1.10 Rust-Crawler Tank (รถถังหลัก): 2D isometric digital illustration, hand-drawn RTS main battle tank, welded entirely from rusted scrap metal and corrugated iron, firing a glowing pink toxic shell from a makeshift cannon, transparent background, isolated.
+1.11 Toxin-Sprayer Truck (รถพ่นสารเคมี): 2D isometric digital illustration, hand-drawn RTS vehicle, armored firetruck repurposed to spray thick glowing pink acidic sludge from a top-mounted hose, scrap-tech, transparent background, isolated.
+1.12 Brain-Tap Drone (โดรนสอดแนม/ตรวจจับ): 2D isometric digital illustration, hand-drawn RTS air unit, floating cybernetic brain in a glass jar supported by rusty mechanical spider legs and small thrusters, Yuri-style, transparent background, isolated.
+1.13 Mind-Control Mastermind (ยูนิตควบคุมจิตใจ): 2D isometric digital illustration, hand-drawn RTS elite infantry, hovering psychic master in a high-tech floating chair, glowing pink brainwaves expanding outwards, Yuri faction aesthetic, transparent background, isolated.
+1.14 Scrap-Copter (เฮลิคอปเตอร์จู่โจม): 2D isometric digital illustration, hand-drawn RTS air unit, makeshift helicopter built from junk, asymmetrical rotors, firing dual rusty machine guns, flying dynamically, transparent background, isolated.
+1.15 Psy-Bomber (เครื่องบินทิ้งระเบิดประสาท): 2D isometric digital illustration, hand-drawn RTS heavy air unit, rusted bomber plane dropping capsules of glowing pink hallucinogenic gas, scrap-tech wings, transparent background, isolated.
+1.16 River-Phantom Gunboat (เรือปืนลาดตระเวน): 2D isometric digital illustration, hand-drawn RTS naval unit, fast patrol boat covered in rusted spikes and scrap metal plating, firing makeshift torpedoes, transparent background, isolated.
+1.17 Siam Dreadnought (เรือรบประจัญบาน): 2D isometric digital illustration, hand-drawn RTS heavy naval unit, massive floating scrap-metal fortress, multiple mismatched cannons, smoking chimneys, glowing pink psycho-core, transparent background, isolated.
+1.18 Illusion-Caster (ทหารสร้างภาพลวงตา): 2D isometric digital illustration, hand-drawn RTS infantry, cybernetic monk projecting fake glitching holographic copies of himself, holding a glowing staff, transparent background, isolated.
+1.19 Parasite-Bot (หุ่นยนต์ก่อกวน): 2D isometric digital illustration, hand-drawn RTS small mechanical unit, tiny rusty spider-bot attaching itself to an enemy tank armor, hacking and draining energy, transparent background, isolated.
+1.20 Psy-Amplifier Tower (รถขยายสัญญาณคลื่นสมอง): 2D isometric digital illustration, hand-drawn RTS support vehicle, mobile truck deployed with a tall glowing pink radar dish, emitting psychic waves, transparent background, isolated.
+1.21 Muay-Borg Champion (ยูนิตฮีโร่ - นักมวยไซบอร์ก): 2D isometric digital illustration, hand-drawn RTS hero unit, Muay Thai fighter with heavy rusted cybernetic arms and legs, performing a devastating flying knee strike with pink energy trail, transparent background, isolated.
+
+1.22 Superweapon: The Golden Resonator (เจดีย์ขยายสัญญาณจิต)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS superweapon building, massive golden Thai Pagoda acting as a giant psychic amplifier antenna, emitting a glowing pink and golden electromagnetic mind-control wave, transparent background, isolated.
+1.23 Ability Icon: Lotus Toxin (สารสกัดดอกบัวมรณะ)
+Prompt: 2D flat vector digital art game skill icon, 1:1 square, mutated cybernetic lotus flower releasing a thick glowing pink toxic hallucinogenic gas, transparent background, isolated.
+1.24 Environment Map: Syndicate Scrap Outpost
+Prompt: 2D isometric digital illustration, hand-drawn RTS game map tile, rugged muddy Southeast Asian terrain, scattered scrap metal, glowing pink psycho-chemical puddles, no characters, empty battlefield, transparent background.
+
+🇯🇵 2. Japan: Zaibatsu Shogunate
+
+Theme: Cyberpunk, Quantum Tech, Capitalist War Machine, Sleek, Neon Tokyo vibes.
+
+2.1 Command Center (ฐานบัญชาการ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS game asset of a Zaibatsu Shogunate military base, massive cyberpunk Japanese castle, quantum tech design, sleek dark metal with neon red lights, clean 2D anime style, cel-shaded, transparent background, isolated.
+
+[Units: 20 ยูนิตของกองทัพโชกุนไซบัตสึ]
+2.2 Quantum Ore Harvester (รถขุดแร่): 2D isometric digital illustration, hand-drawn RTS harvester vehicle, sleek cyberpunk hover-truck, extracting resources with a neon red laser mining drill, corporate zaibatsu logos, clean anime style, transparent background, isolated.
+2.3 Ronin Cyborg (ทหารดาบพลาสม่า): 2D isometric digital illustration, hand-drawn RTS infantry, cyberpunk mercenary Ronin cyborg, wielding a glowing red plasma deflector katana, deflecting bullets, transparent background, isolated.
+2.4 Kaiju-Carrier (เรือบรรทุกเครื่องบินแปลงร่าง): 2D isometric digital illustration, hand-drawn RTS epic vehicle, massive quantum aircraft carrier transformed into a giant mechanical Godzilla-like Kaiju walking on land, glowing red core, mecha anime style, transparent background, isolated.
+2.5 Ashigaru Enforcer (ทหารราบหลัก): 2D isometric digital illustration, hand-drawn RTS infantry, high-tech Japanese foot soldier with sleek white and red armor, firing a rapid quantum laser rifle, crisp anime style, transparent background, isolated.
+2.6 Shinobi Sniper (สไนเปอร์ล่องหน): 2D isometric digital illustration, hand-drawn RTS infantry, stealth ninja sniper aiming a long glowing red railgun, optical camouflage glitch effect, cyberpunk tech wear, transparent background, isolated.
+2.7 Kamikaze Drone (โดรนพลีชีพ): 2D isometric digital illustration, hand-drawn RTS air unit, small sleek robotic drone shaped like a folded paper crane, glowing red explosive core, diving downwards, transparent background, isolated.
+2.8 Cyber-Hound (หุ่นยนต์หมาสอดแนม): 2D isometric digital illustration, hand-drawn RTS fast unit, mechanical robotic dog, sleek white armor, red glowing eyes, running at high speed, transparent background, isolated.
+2.9 Neon-Drift Hoverbike (มอเตอร์ไซค์ลอยตัว): 2D isometric digital illustration, hand-drawn RTS fast vehicle, cyberpunk hoverbike drifting with a blue neon trail, rider firing dual SMGs, Akira style, transparent background, isolated.
+2.10 Shogun Battle Tank (รถถังหลัก): 2D isometric digital illustration, hand-drawn RTS main battle tank, sleek aerodynamic design, hovering slightly, twin quantum cannons charging red energy, pristine white armor, transparent background, isolated.
+2.11 Plasma Artillery Mech (หุ่นยนต์ปืนใหญ่): 2D isometric digital illustration, hand-drawn RTS heavy vehicle, mechanical walker deployed into a stationary artillery stance, firing a massive arc of red plasma, mecha anime style, transparent background, isolated.
+2.12 Quantum-Teleporter APC (รถลำเลียงวาร์ป): 2D isometric digital illustration, hand-drawn RTS transport vehicle, high-tech armored personnel carrier disappearing into a glitching red quantum teleportation portal, transparent background, isolated.
+2.13 Tengu-Jet (เครื่องบินรบแปลงร่าง): 2D isometric digital illustration, hand-drawn RTS air unit, sleek variable-fighter jet mid-transformation into a humanoid flying mecha, anime style, glowing thrusters, transparent background, isolated.
+2.14 Raijin Gunship (เฮลิคอปเตอร์จู่โจมหนัก): 2D isometric digital illustration, hand-drawn RTS heavy air unit, futuristic quad-rotor gunship, firing barrages of red plasma missiles, sleek corporate design, transparent background, isolated.
+2.15 Koi-Cruiser (เรือลาดตระเวน): 2D isometric digital illustration, hand-drawn RTS naval unit, fast hydrofoil boat shaped sleekly like a Koi fish, launching high-speed torpedoes, transparent background, isolated.
+2.16 Tsunami Submarine (เรือดำน้ำควอนตัม): 2D isometric digital illustration, hand-drawn RTS naval unit, stealth submarine, sleek black and red design, firing glowing red quantum torpedoes underwater, transparent background, isolated.
+2.17 Nanobot-Repair Drone (โดรนซ่อมบำรุง): 2D isometric digital illustration, hand-drawn RTS support unit, small hovering bot emitting a green healing beam of nanobots repairing a tank, transparent background, isolated.
+2.18 Oni-Mech Brute (หุ่นรบแนวหน้า): 2D isometric digital illustration, hand-drawn RTS heavy infantry/mech, bulky humanoid mecha with an Oni demon mask face, wielding a massive glowing red energy club, mecha anime style, transparent background, isolated.
+2.19 Quantum-Shield Generator (รถกางบาเรียมิติ): 2D isometric digital illustration, hand-drawn RTS support vehicle, sleek rover projecting a shimmering hex-grid quantum shield dome over itself, transparent background, isolated.
+2.20 Cyber-Geisha Assassin (ยูนิตลอบสังหาร): 2D isometric digital illustration, hand-drawn RTS infantry, elegant geisha android, face opening to reveal cybernetic assassin tools, throwing sharp glowing red energy fans, transparent background, isolated.
+2.21 Yakuza Syndicate Boss (ยูนิตฮีโร่): 2D isometric digital illustration, hand-drawn RTS hero unit, cyborg Yakuza boss in a sleek high-tech suit, cybernetic glowing red arm, dual-wielding plasma SMGs, confident anime pose, transparent background, isolated.
+
+2.22 Superweapon: Quantum Void Generator (เครื่องกำเนิดหลุมดำ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS superweapon attack, quantum dark matter missile striking the ground, tearing reality to create a stylized dark glowing black hole, 2D distortion effects, transparent background, isolated.
+2.23 Ability Icon: Banzai Overdrive (โปรโตคอลโอเวอร์ไดรฟ์)
+Prompt: 2D flat vector digital art game skill icon, 1:1 square, glowing red high-tech nanobot syringe injecting fluid into a mechanical heart, steaming with heat, transparent background, isolated.
+2.24 Environment Map: Zaibatsu Cyber-Grid
+Prompt: 2D isometric digital illustration, hand-drawn RTS game map tile, Neo-Tokyo streets at night, dark metallic pavement, glowing blue and red neon grid lines, rainy wet surface reflections, no characters, transparent background.
+
+🇨🇭 3. Switzerland: The Swiss Directorate
+
+Theme: Allied style, Cryo-Tech, High Cost, Force fields, Pristine White & Blue.
+
+3.1 Command Center (ฐานบัญชาการ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS game asset of an impenetrable Swiss military fortress, pristine white and blue European allied design, cryo-tech cooling towers, glowing blue prism force fields, transparent background, isolated.
+
+[Units: 20 ยูนิตของกองทัพสภาปกครองสวิส]
+3.2 Cryo-Miner (รถขุดแร่): 2D isometric digital illustration, hand-drawn RTS harvester vehicle, pristine white and blue Allied design, thick tank tracks, carrying a glowing blue storage container of cryo-minerals, transparent background, isolated.
+3.3 Alps Behemoth (รถถังยักษ์กางบาเรีย): 2D isometric digital illustration, hand-drawn RTS heavy vehicle, gargantuan slow-moving tank, 8 thick tracks, pristine white armor, projecting a semi-transparent blue prism force field dome, transparent background, isolated.
+3.4 Hacker-Drone "Cuckoo" (โดรนสอดแนม/แฮกเกอร์): 2D isometric digital illustration, hand-drawn stealth spy unit, sleek hovering cybernetic drone, shooting a glowing blue data-siphon laser downwards, transparent background, isolated.
+3.5 Bank-Guard Sentinel (ทหารราบหลัก): 2D isometric digital illustration, hand-drawn RTS infantry, heavily armored riot-gear soldier, holding a glowing blue cryo-stun baton and an energy riot shield, white and blue armor, transparent background, isolated.
+3.6 Avalanche Rocketeer (ทหารจรวดต่อต้านรถถัง): 2D isometric digital illustration, hand-drawn RTS infantry, soldier carrying a massive high-tech shoulder-mounted missile launcher, pristine white winter gear, transparent background, isolated.
+3.7 Cryo-Legionnaire (ทหารราบปืนแช่แข็ง): 2D isometric digital illustration, hand-drawn RTS elite infantry, heavy space-suit style armor, firing a stream of freezing liquid nitrogen from a heavy cannon, ice crystals forming, transparent background, isolated.
+3.8 Franc-Sniper (สไนเปอร์ระยะไกล): 2D isometric digital illustration, hand-drawn RTS infantry, elite sniper in white winter camouflage, aiming a sleek blue beam-rifle with a high-tech scope, transparent background, isolated.
+3.9 Vault-APC (รถหุ้มเกราะลำเลียง): 2D isometric digital illustration, hand-drawn RTS transport vehicle, heavy boxy APC resembling a moving bank vault, pristine white armor, thick steel doors, transparent background, isolated.
+3.10 Glacier Medium Tank (รถถังหลัก): 2D isometric digital illustration, hand-drawn RTS main battle tank, robust European allied design, thick sloped white armor, firing a heavy kinetic shell, transparent background, isolated.
+3.11 Prism-Artillery (ปืนใหญ่เลเซอร์สะท้อน): 2D isometric digital illustration, hand-drawn RTS heavy vehicle, sleek artillery tank firing a bright concentrated blue prism laser beam that shatters into smaller beams, transparent background, isolated.
+3.12 EMP-Rover (รถบักกี้ตัดกำลัง): 2D isometric digital illustration, hand-drawn RTS fast vehicle, high-tech scout buggy with a top-mounted EMP dish, emitting electric blue shockwaves, transparent background, isolated.
+3.13 Alpine Fighter-Jet (เครื่องบินขับไล่): 2D isometric digital illustration, hand-drawn RTS air unit, sleek aerodynamic air superiority fighter jet, white and blue paint, firing freezing cryo-missiles, transparent background, isolated.
+3.14 Zeppelin Overseer (เรือเหาะบัญชาการ): 2D isometric digital illustration, hand-drawn RTS heavy air unit, massive armored zeppelin blimp, dropping heavy bombs, glowing blue windows, majestic European design, transparent background, isolated.
+3.15 Credit-Siphon Boat (เรือขโมยทรัพยากร): 2D isometric digital illustration, hand-drawn RTS naval unit, stealthy fast interceptor boat, aiming a hacking laser at the shore, sleek white hull, transparent background, isolated.
+3.16 Icebreaker Dreadnought (เรือรบทำลายน้ำแข็ง): 2D isometric digital illustration, hand-drawn RTS heavy naval unit, massive armored battleship with a reinforced ramming prow, firing heavy blue cryo-cannons, transparent background, isolated.
+3.17 Field-Medic Drone (โดรนแพทย์ทหาร): 2D isometric digital illustration, hand-drawn RTS support unit, hovering drone resembling a white cross, projecting a healing blue light over a wounded soldier, transparent background, isolated.
+3.18 Shield-Wall Deployer (รถกางกำแพงสนามพลัง): 2D isometric digital illustration, hand-drawn RTS support vehicle, truck deployed into a stationary mode, projecting a massive solid blue energy wall to block paths, transparent background, isolated.
+3.19 Radar-Jamming Truck (รถกวนสัญญาณ): 2D isometric digital illustration, hand-drawn RTS vehicle, heavy truck with an array of complex spinning satellite dishes, emitting blue distortion rings, transparent background, isolated.
+3.20 Cryo-Copter (เฮลิคอปเตอร์แช่แข็ง): 2D isometric digital illustration, hand-drawn RTS air unit, high-tech helicopter firing a continuous shrink/freeze ray downwards, ice forming on target, transparent background, isolated.
+3.21 Directorate Chairman (ยูนิตฮีโร่): 2D isometric digital illustration, hand-drawn RTS hero unit, man in a pristine high-tech white business suit, holding a glowing blue datapad, calling down an orbital laser strike, transparent background, isolated.
+
+3.22 Superweapon: Absolute Zero Collider (เครื่องแช่แข็งแผนที่)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS superweapon, massive underground particle accelerator breaching surface, launching a freezing sub-zero bomb, frost and ice radiating outwards, transparent background, isolated.
+3.23 Ability Icon: Cryo-Lockdown (แช่แข็งสิ่งก่อสร้าง)
+Prompt: 2D flat vector digital art game skill icon, 1:1 square, high-tech factory building completely encased in solid glowing blue liquid nitrogen ice, transparent background, isolated.
+3.24 Environment Map: Alpine Defense Line
+Prompt: 2D isometric digital illustration, hand-drawn RTS game map tile, pristine snowy mountain terrain, deep white snow, frozen blue ice patches, high-tech concrete tank traps, no characters, transparent background.
+
+🇧🇷 4. Brazil: Amazonian Mutagenics
+
+Theme: Bio-Weapons, Mutant flora/fauna, Acid, Soviet Toxin vibe, Jungle horror.
+
+4.1 Command Center (ฐานบัญชาการ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS building asset of a bio-engineered command center, heavily mutated Amazonian plants fusing with military tents, giant toxic green acid vats, pulsating organic machinery, biopunk aesthetics, transparent background, isolated.
+
+[Units: 20 ยูนิตของกองกำลังกลายพันธุ์แอมะซอน]
+4.2 Bio-Harvester (รถขุดแร่ชีวภาพ): 2D isometric digital illustration, hand-drawn RTS harvester vehicle, bio-mechanical ore harvester, giant insect-vehicle hybrid, carrying glowing green toxic crystals in a pulsating biological sac, transparent background, isolated.
+4.3 Mutant Stalkers (ทหารกลายพันธุ์พรางตัว): 2D isometric digital illustration, hand-drawn RTS infantry, stealthy bio-mutant soldier, animal-spliced genetics, partial chameleon skin optical camouflage effect, wielding a poison knife, transparent background, isolated.
+4.4 Bio-Mortar (ปืนใหญ่ชีวภาพแมลง): 2D isometric digital illustration, hand-drawn RTS artillery, biopunk walking on heavy insect legs, firing a glowing purple acid spore capsule, corrosive acid dripping, transparent background, isolated.
+4.5 Jungle Militia (ทหารราบหลัก): 2D isometric digital illustration, hand-drawn RTS infantry, rugged guerrilla fighter wrapped in mutated vines, firing a rifle that shoots glowing green toxic darts, transparent background, isolated.
+4.6 Acid-Spitter (ทหารพ่นกรดละลายเกราะ): 2D isometric digital illustration, hand-drawn RTS infantry, heavily mutated human with a swollen toxic throat, spewing a stream of melting green acid, biopunk horror, transparent background, isolated.
+4.7 Bio-Bomber (ทหารพลีชีพ): 2D isometric digital illustration, hand-drawn RTS infantry, unstable mutant running frantically, strapped with pulsating, glowing purple explosive bio-pods, transparent background, isolated.
+4.8 Piranha-Swarm Drone (โดรนฝูงปิรันย่าบิน): 2D isometric digital illustration, hand-drawn RTS air unit, swarm of small vicious flying cybernetic piranhas with razor-sharp teeth, dark green aura, transparent background, isolated.
+4.9 Venom-Buggy (รถบักกี้ยิงพิษ): 2D isometric digital illustration, hand-drawn RTS fast vehicle, rusted jungle buggy covered in vines, shooting rapid-fire toxic quills from a mounted biological turret, transparent background, isolated.
+4.10 Rhino-Beetle Tank (รถถังแมลงปีกแข็ง): 2D isometric digital illustration, hand-drawn RTS main battle tank, massive bio-mechanical rhinoceros beetle, thick armored carapace, firing an explosive biological shell from its horn, transparent background, isolated.
+4.11 Centipede-Transport (รถลำเลียงมุดดิน): 2D isometric digital illustration, hand-drawn RTS transport vehicle, giant mechanical centipede erupting from the dirt floor to unload infantry, biological horror, transparent background, isolated.
+4.12 Sporeship (เรือเหาะปล่อยสปอร์พิษ): 2D isometric digital illustration, hand-drawn RTS air unit, floating biological blimp resembling a massive lung or gasbag, dropping clouds of toxic purple spores, transparent background, isolated.
+4.13 Pterodactyl-Rider (ทหารขี่สัตว์บินได้): 2D isometric digital illustration, hand-drawn RTS fast air unit, mutant soldier riding a bio-engineered cybernetic Pterodactyl, firing a toxic machine gun, transparent background, isolated.
+4.14 Kraken-Tentacle Sub (เรือดำน้ำหนวดปลาหมึก): 2D isometric digital illustration, hand-drawn RTS naval unit, stealth sub resembling a massive mechanical kraken, reaching a giant metal tentacle out of the water to crush ships, transparent background, isolated.
+4.15 Toxic-Toad Gunboat (เรือปืนคางคกพิษ): 2D isometric digital illustration, hand-drawn RTS naval unit, amphibious boat with biological toad-like legs, spitting massive blobs of green acid mortar over water, transparent background, isolated.
+4.16 Fungal-Infection Crawler (รถปล่อยเชื้อราซอมบี้): 2D isometric digital illustration, hand-drawn RTS support vehicle, slow-moving tank spreading thick purple fungal roots into the ground, reanimating dead soldiers, biopunk, transparent background, isolated.
+4.17 Web-Spinner Spider (แมงมุมวางกับดัก): 2D isometric digital illustration, hand-drawn RTS unit, giant bio-mechanical spider shooting sticky glowing green corrosive webs onto the ground, transparent background, isolated.
+4.18 Chameleon-Sniper (สไนเปอร์พรางตัวสมบูรณ์): 2D isometric digital illustration, hand-drawn RTS elite infantry, sniper fully blended into the background using chameleon skin, aiming a biological dart rifle, nearly invisible effect, transparent background, isolated.
+4.19 Leech-Tank (รถถังดูดเลือด): 2D isometric digital illustration, hand-drawn RTS heavy vehicle, bio-tank that shoots a tethered flesh-hook into enemies to drain glowing red health back to itself, transparent background, isolated.
+4.20 Goliath-Worm (ยูนิตมหากาพย์ใต้ดิน): 2D isometric digital illustration, hand-drawn RTS epic unit, colossal terrifying bio-mechanical sandworm bursting from the ground with gaping circular teeth, swallowing a tank whole, transparent background, isolated.
+4.21 Shaman of the Swarm (ยูนิตฮีโร่): 2D isometric digital illustration, hand-drawn RTS hero unit, menacing witch-doctor shrouded in a swarm of buzzing insects, holding a glowing green bio-staff, summoning mutated beasts, transparent background, isolated.
+
+4.22 Superweapon: The Hive-Bomb (ระเบิดฝูงมฤตยู)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS superweapon attack, massive biological egg dropping from the sky hatching millions of tiny cyber-locusts forming a dark dense swarm, organic horror, transparent background, isolated.
+4.23 Ability Icon: Mutagenic Bloom (กำแพงต้นไม้พิษ)
+Prompt: 2D flat vector digital art game skill icon, 1:1 square, aggressive mutated jungle vines with toxic glowing green thorns bursting violently from the ground, transparent background, isolated.
+4.24 Environment Map: Mutated Amazon Zone
+Prompt: 2D isometric digital illustration, hand-drawn RTS game map tile, overgrown mutated Amazon rainforest, thick glowing purple fungal growths, dark green toxic swamp puddles, twisted alien tree roots, no characters, transparent background.
+
+🇪🇬 5. Egypt: The Pharaonic Order
+
+Theme: Reverse-engineered alien tech, Prism/Laser, Holograms, Gold and Black.
+
+5.1 Command Center (ฐานบัญชาการ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS game asset of a massive sci-fi Egyptian Pyramid serving as a command base, reverse-engineered alien technology, sleek black obsidian and gold panels, glowing solar prism receivers, transparent background, isolated.
+
+[Units: 20 ยูนิตของภาคีฟาโรห์เทคโน]
+5.2 Alien-Tech Harvester (รถขุดแร่เอเลี่ยนเทค): 2D isometric digital illustration, hand-drawn RTS harvester vehicle, alien-tech ore miner hovercraft, sleek black and gold Egyptian design, anti-gravity repulsors, precision yellow solar laser beam mining, transparent background, isolated.
+5.3 Sun-God Walker (หุ่นยนต์อนูบิส): 2D isometric digital illustration, hand-drawn RTS heavy vehicle, majestic 4-legged heavy mech designed like the god Anubis, sleek black solar-absorbing armor, firing concentrated yellow heat lasers from eyes, transparent background, isolated.
+5.4 Sand-Stealth Generator (รถสร้างพายุทราย EMP): 2D isometric digital illustration, hand-drawn RTS tactical vehicle, futuristic desert hovercraft generating a thick localized electromagnetic EMP sandstorm around it, gold and black armor, transparent background, isolated.
+5.5 Cultist Zealot (ทหารราบหลัก): 2D isometric digital illustration, hand-drawn RTS infantry, hooded Egyptian zealot wearing sleek black high-tech armor, firing a golden alien plasma rifle, crisp lines, transparent background, isolated.
+5.6 Scarab-Drone Swarm (ฝูงแมลงปีกแข็งกลไก): 2D isometric digital illustration, hand-drawn RTS anti-infantry unit, swarm of small hovering robotic scarab beetles with glowing yellow eyes, swarming the ground, alien tech, transparent background, isolated.
+5.7 Horus-Sniper (สไนเปอร์ลอยตัว): 2D isometric digital illustration, hand-drawn RTS infantry, hovering elite sniper with mechanical falcon wings, aiming a devastating long-range yellow beam rifle, transparent background, isolated.
+5.8 Obelisk-Tank (รถถังเลเซอร์): 2D isometric digital illustration, hand-drawn RTS main battle tank, sleek hovering black obsidian chassis with a miniature Obelisk of Light mounted on top, firing a continuous yellow laser, transparent background, isolated.
+5.9 Sphinx-Artillery (ปืนใหญ่คลื่นเสียง): 2D isometric digital illustration, hand-drawn RTS artillery, heavy hovering vehicle shaped like a sleek cybernetic Sphinx, firing a devastating ring-shaped sonic/sand blast, transparent background, isolated.
+5.10 Chariot-Hoverbike (มอเตอร์ไซค์ลอยตัวต่อต้านอากาศยาน): 2D isometric digital illustration, hand-drawn RTS fast vehicle, alien-tech hover chariot driven by a robotic soldier, firing dual rapid plasma cannons upwards, transparent background, isolated.
+5.11 Mirage-Transport (รถลำเลียงล่องหน): 2D isometric digital illustration, hand-drawn RTS transport vehicle, sleek black hovering troop carrier wrapped in a glitching optical camouflage field, semi-transparent effect, transparent background, isolated.
+5.12 Ra-Fighter (เครื่องบินรบรูปทรงสามเหลี่ยม): 2D isometric digital illustration, hand-drawn RTS fast air unit, sleek black and gold delta-wing alien spacecraft, very fast, firing yellow laser bolts, transparent background, isolated.
+5.13 Solar-Barge (เรือเหาะปืนกลเลเซอร์): 2D isometric digital illustration, hand-drawn RTS heavy air unit, floating majestic Egyptian barge powered by anti-gravity, raining down multiple yellow plasma beams, transparent background, isolated.
+5.14 Nile-Cruiser (เรือรบเลเซอร์): 2D isometric digital illustration, hand-drawn RTS naval unit, sleek hovering naval ship skimming over water, sleek black obsidian hull, firing a massive concentrated sunbeam, transparent background, isolated.
+5.15 Leviathan-Sub (เรือดำน้ำรูปทรงเอเลี่ยน): 2D isometric digital illustration, hand-drawn RTS naval unit, submarine shaped like a mysterious glowing gold and black alien artifact, shooting EMP torpedoes underwater, transparent background, isolated.
+5.16 Hieroglyph-Caster (รถสนับสนุนชี้เป้า): 2D isometric digital illustration, hand-drawn RTS support vehicle, hovering obelisk unit painting a target with a glowing yellow hieroglyph laser symbol for increased damage, transparent background, isolated.
+5.17 Sand-Worm Mech (หุ่นรบหนอนทะเลทรายมุดดิน): 2D isometric digital illustration, hand-drawn RTS unit, mechanical segmented burrower popping out of the sand to ambush, sleek black and gold alien metal, transparent background, isolated.
+5.18 Plasma-Web Layer (รถวางกับดักเลเซอร์): 2D isometric digital illustration, hand-drawn RTS support vehicle, deploying small pylons that connect to form a glowing yellow laser fence to block chokepoints, transparent background, isolated.
+5.19 Resurrection-Drone (โดรนชุบชีวิต): 2D isometric digital illustration, hand-drawn RTS support unit, hovering golden artifact emitting a revivifying yellow light beam over a fallen soldier, bringing them back to life, transparent background, isolated.
+5.20 Pyramid-Mothership (ยานแม่ขนาดยักษ์): 2D isometric digital illustration, hand-drawn RTS epic air unit, colossal hovering inverted black and gold pyramid, charging a massive world-ending yellow laser from its bottom point, transparent background, isolated.
+5.21 High-Priestess Imhotep (ยูนิตฮีโร่): 2D isometric digital illustration, hand-drawn RTS hero unit, elegant Egyptian priestess floating in the air, holding a glowing alien artifact, calling down a mini orbital solar beam, transparent background, isolated.
+
+5.22 Superweapon: Solaris Orbital Array (เสาแสงทำลายล้างจากอวกาศ)
+
+Prompt: 2D isometric digital illustration, hand-drawn RTS superweapon attack, devastating vertical pillar of pure bright yellow solar light hitting the ground from space, burning to ash, Ion Cannon style, transparent background, isolated.
+5.23 Ability Icon: Holo-Mirage Generator (เครื่องสร้างภาพลวงตา)
+Prompt: 2D flat vector digital art game skill icon, 1:1 square, high-tech drone projecting a glitching 3D golden holographic decoy of an army of soldiers, symbolizing mirage, transparent background, isolated.
+5.24 Environment Map: Solar Desert Wasteland
+Prompt: 2D isometric digital illustration, hand-drawn RTS game map tile, sci-fi Egyptian desert wasteland, rolling golden sand dunes, scattered sleek black obsidian rocks with glowing yellow hieroglyphs, no characters, transparent background.

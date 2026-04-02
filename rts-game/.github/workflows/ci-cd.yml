@@ -1,0 +1,61 @@
+name: Faction Wars CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check all JS
+        run: |
+          for f in *.js; do node -c "$f" || exit 1; done
+          cd server && node -c server.js && node -c db.js
+
+  test-server:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install server deps
+        run: cd server && npm ci
+      - name: Start server and health check
+        run: |
+          cd server && PORT=4000 node server.js &
+          sleep 2
+          curl -f http://localhost:4000/api/rooms || exit 1
+          curl -f http://localhost:4000/api/leaderboard || exit 1
+          kill %1
+
+  build-docker:
+    runs-on: ubuntu-latest
+    needs: test-server
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build game image
+        run: docker build -t faction-wars-game .
+      - name: Build server image
+        run: docker build -f Dockerfile.server -t faction-wars-server .
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-docker
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to S3 (static game)
+        run: |
+          echo "Deploy step — configure AWS credentials and S3 bucket"
+          # aws s3 sync . s3://$BUCKET_NAME --exclude "server/*" --exclude "node_modules/*" --exclude ".git/*"
+      - name: Invalidate CloudFront
+        run: |
+          echo "CloudFront invalidation step"
+          # aws cloudfront create-invalidation --distribution-id $CF_DIST_ID --paths "/*"

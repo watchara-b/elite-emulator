@@ -1,0 +1,9 @@
+FROM node:20-alpine
+WORKDIR /app
+COPY server/package*.json ./
+RUN npm ci --production
+COPY server/server.js server/db.js ./
+COPY index.html game.js factions.js mapgen.js sprites.js unit-sprites.js map-detail.js navmesh.js anim.js rps.js economy.js ai.js net.js fog.js audio.js abilities.js ./public/
+EXPOSE 4000
+ENV PORT=4000
+CMD ["node", "server.js"]

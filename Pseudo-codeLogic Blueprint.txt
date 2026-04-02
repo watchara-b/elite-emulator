@@ -1,0 +1,90 @@
+1. Thailand (The Siam Resilience) - FSM เน้นการก่อกวนและยืมมือศัตรู
+State 1: SCOUT_AND_HARASS (สอดแนมและตอดเล็กตอดน้อย)
+
+Action: ผลิต Tuk-Tuk Commando วิ่งเปิดหมอก หากเจอรถแร่ศัตรูให้เข้าไปยิงแล้วหนีทันที (Hit-and-Run)
+
+Transition: IF ตรวจพบกองทัพศัตรูขนาดกลางกำลังเคลื่อนที่เข้าหาฐาน -> GO TO STATE 2
+
+State 2: CROWD_CONTROL (ควบคุมฝูงชน)
+
+Action: สั่งยูนิตถอยร่นเข้าสู่จุดซุ่มดัก รอศัตรูเข้าระยะแล้วสาดสกิล Songkran Mist ให้ศัตรูติดสถานะ Confused (ยิงกันเอง)
+
+Transition:
+
+IF ศัตรูล่าถอย หรือถูกทำลาย -> RETURN TO STATE 1
+
+IF ศัตรูรวมกลุ่มเป็นกองทัพใหญ่ (Doomstack) และ Superweapon พร้อม -> GO TO STATE 3
+
+State 3: MASS_CONVERSION (พลิกกระดานด้วยมหาบารมี)
+
+Action: ปล่อยเรือดำน้ำล่องหน Phraya Naga สกัดกั้น และเปิดใช้งาน The Great Merit ดึงกองทัพศัตรูทั้งหมดมาเป็นของตน แล้วสั่งโจมตีกลับทันที
+
+2. Japan (Neo-Shogunate) - FSM เน้นความเร็วและการแลกหมัด
+State 1: RAPID_EXPANSION (ขยายฐานสายฟ้าแลบ)
+
+Action: สร้างโรงงานรัวๆ ผลิตทหารราบวิ่งยึดอาคารกลางแผนที่ (Neutral Tech) เพื่อครองพื้นที่ล่วงหน้า
+
+Transition: IF ทรัพยากรและยูนิต Ronin-EX ถึงเกณฑ์ที่กำหนด -> GO TO STATE 2
+
+State 2: RELENTLESS_ASSAULT (บุกทะลวงต่อเนื่อง)
+
+Action: ส่งกองทัพเข้ากดดันฐานศัตรูอย่างต่อเนื่อง เปิดโหมดปัดกระสุนอัตโนมัติเมื่อโดนยิง
+
+Transition:
+
+IF ถูกต้านทานอย่างหนัก หรือ พลังชีวิตฐานหลัก (Base HP) ต่ำกว่า 30% -> GO TO STATE 3
+
+State 3: KAMIKAZE_OVERRIDE (โหมดพลีชีพมรณะ)
+
+Action: เปิดบัฟ Ancestral Spirit (ตีแรง 2 เท่าแต่เลือดลดเรื่อยๆ) ใส่ทุกยูนิต ส่ง Kaiju-Carrier แปลงร่างบุกเดี่ยว แล้วใช้ Singularity Blade ฟันเปิดหลุมดำกลางฐานศัตรูแบบ All-in
+
+3. Switzerland (The Iron Vault) - FSM เน้นเศรษฐกิจและการปิดประตูตีแมว
+State 1: FORTIFICATION (ป้อมปราการเหล็ก)
+
+Action: สร้างกำแพง ป้อมปืน และส่ง Cuckoo-Drone บินไปขโมยเงินศัตรูเรื่อยๆ เพื่อตุนทรัพยากร
+
+Transition: IF ศัตรูเริ่มสะสมกองทัพ หรือ เงินของศัตรูพุ่งสูงเกินไป -> GO TO STATE 2
+
+State 2: ECONOMIC_LOCKDOWN (สกัดกั้นทางการเงิน)
+
+Action: กดสกิล Frozen Assets แช่แข็งบัญชีศัตรู ขยับรถถัง Alps Fortress ไปกาง Force Field ปิดทางเข้าฐาน
+
+Transition: IF โดนบุกอย่างหนักจนป้อมเริ่มพัง หรือ Superweapon ชาร์จเต็ม -> GO TO STATE 3
+
+State 3: ABSOLUTE_FREEZE (แช่แข็งสมบูรณ์แบบ)
+
+Action: ยิง Sub-Zero Collider แช่แข็งยูนิตครึ่งแผนที่ แล้วส่งรถถังยักษ์ออกไปบดขยี้ยูนิตศัตรูที่ขยับไม่ได้
+
+4. Brazil (Amazonia Bio-Tech) - FSM เน้นการซุ่มซ่อนและการกัดกร่อน
+State 1: ECO_CAMOUFLAGE (พรางตัวกลมกลืนธรรมชาติ)
+
+Action: ใช้ Rainforest Overgrowth สร้างป่าปิดทางเข้าฐาน ซ่อน Jaguar Stalkers ไว้ในโหมดล่องหน
+
+Transition: IF ตรวจพบฐานศัตรูที่มีการป้องกันแน่นหนา -> GO TO STATE 2
+
+State 2: TOXIC_SIEGE (ปิดล้อมด้วยพิษ)
+
+Action: ตั้งปืนใหญ่ Spore Launcher นอกระยะการมองเห็น ยิงสปอร์เห็ดพิษละลายสิ่งก่อสร้างศัตรูอย่างช้าๆ (DoT)
+
+Transition: IF ศัตรูส่งกองทัพออกมาเคลียร์ปืนใหญ่ หรือ ศัตรูรวมกลุ่มกันแน่น -> GO TO STATE 3
+
+State 3: APEX_SWARM (ฝูงแมลงกลืนกิน)
+
+Action: ปล่อย Apex Predator ฝูงแมลงยักษ์ลงกลางดงศัตรูหรือฐานศัตรู เพื่อกวาดล้างสิ่งมีชีวิตและอินทรีย์วัตถุทั้งหมดในพริบตา
+
+5. Egypt (Solar Dynasty) - FSM เน้นภาพลวงตาและการลอบสังหารระยะไกล
+State 1: ENERGY_HOARDING (สะสมพลังงานแสง)
+
+Action: สร้างแผงโซลาร์เซลล์จำนวนมาก ใช้ Sandstorm Generator สร้างพายุทรายคลุมฐานทัพตัวเองเพื่อหลบการสอดแนม
+
+Transition: IF ศัตรูเข้ามาใกล้ หรือต้องการเปิดฉากโจมตี -> GO TO STATE 2
+
+State 2: MIRAGE_WARFARE (สงครามจิตวิทยา)
+
+Action: ใช้สกิล Mirage Projection สร้างกองทัพร่างโคลนวิ่งไปล่อเป้าให้ศัตรูเสียกระสุนและสกิลฟรี ส่วนกองทัพจริง (Anubis Walker) ยิงเลเซอร์จากอีกฝั่ง
+
+Transition: IF ตรวจพบเป้าหมายที่มีมูลค่าสูงมาก (High-Value Target เช่น ฐาน Superweapon ศัตรู) -> GO TO STATE 3
+
+State 3: ORBITAL_JUDGMENT (การพิพากษาจากฟากฟ้า)
+
+Action: ล็อกเป้าหมายที่อันตรายที่สุด แล้วสั่งยิง Ra’s Judgment ลำแสงสุริยะจากดาวเทียม ลบสิ่งก่อสร้างนั้นทิ้งในคราวเดียว

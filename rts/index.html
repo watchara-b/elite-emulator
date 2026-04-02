@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>RTS Base Builder</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;overflow:hidden;font-family:monospace;color:#fff}
+#cv{display:block;margin:0 auto;cursor:crosshair;image-rendering:pixelated}
+#ui{position:fixed;bottom:0;left:0;right:0;height:120px;background:rgba(0,0,0,.85);border-top:2px solid #444;display:flex;padding:6px;gap:6px}
+#minimap{width:150px;height:108px;background:#1a1a1a;border:1px solid #555;flex-shrink:0}
+#panel{flex:1;display:flex;flex-direction:column}
+#resources{display:flex;gap:16px;font-size:13px;padding:4px 8px;background:rgba(0,0,0,.5);border-radius:3px}
+.res{display:flex;align-items:center;gap:4px}
+.res span{color:#fd0}
+#actions{display:flex;gap:4px;padding:4px;flex-wrap:wrap;flex:1;overflow-y:auto}
+.btn{background:#333;border:1px solid #555;color:#ccc;padding:4px 8px;font-size:11px;font-family:monospace;cursor:pointer;border-radius:2px;min-width:70px;text-align:center}
+.btn:hover{background:#555;color:#fff}
+.btn.active{background:#264;border-color:#4a8}
+#info{position:fixed;top:4px;right:4px;font-size:11px;background:rgba(0,0,0,.7);padding:4px 8px;border-radius:3px}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div id="info">FPS: <span id="fps">0</span> | <span id="selInfo">-</span></div>
+<div id="ui">
+  <canvas id="minimap"></canvas>
+  <div id="panel">
+    <div id="resources">
+      <div class="res">💰 <span id="rGold">500</span></div>
+      <div class="res">⚡ <span id="rPower">0/0</span></div>
+      <div class="res">🏠 <span id="rPop">0/5</span></div>
+    </div>
+    <div id="actions"></div>
+  </div>
+</div>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="render.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
