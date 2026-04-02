@@ -1,0 +1,73 @@
+name: Deploy Faction Wars
+
+on:
+  push:
+    branches: [main]
+
+env:
+  S3_BUCKET: rts-faction-wars-34f666dd
+  CF_DISTRIBUTION_ID: E37MNALA3G0IUV
+  AWS_REGION: us-east-1
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check JS
+        run: |
+          cd rts-game
+          for f in *.js; do node -c "$f" || exit 1; done
+          cd server && node -c server.js && node -c db.js
+
+  test-server:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and test server
+        run: |
+          cd rts-game/server && npm ci
+          PORT=4000 node server.js &
+          sleep 2
+          curl -f http://localhost:4000/api/rooms
+          curl -f http://localhost:4000/api/leaderboard
+          kill %1
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test-server
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy to S3
+        run: |
+          cd rts-game
+          aws s3 sync . s3://$S3_BUCKET \
+            --exclude "server/*" \
+            --exclude "node_modules/*" \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "infra/*" \
+            --exclude "k8s/*" \
+            --exclude "docker-compose.yml" \
+            --exclude "Dockerfile*" \
+            --delete
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id $CF_DISTRIBUTION_ID \
+            --paths "/*"
