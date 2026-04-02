@@ -21,17 +21,35 @@ function _mkNoise(seed) {
 }
 
 function _clearStarts(map, W, H) {
-  // Larger start areas for bigger maps
   var sz = Math.max(10, Math.floor(Math.min(W, H) * 0.12));
-  for (let y = 0; y < sz; y++) for (let x = 0; x < sz+2; x++) if(y<H&&x<W) map[y][x] = 0;
-  for (let y = H-sz; y < H; y++) for (let x = W-sz-2; x < W; x++) if(y>=0&&x>=0) map[y][x] = 0;
+  // Clear player spawn (top-left) — keep ore tiles intact
+  for (let y = 0; y < sz; y++) for (let x = 0; x < sz+2; x++) {
+    if (y<H&&x<W && map[y][x] !== 1) map[y][x] = 0;
+  }
+  // Clear enemy spawn (bottom-right) — keep ore tiles intact
+  for (let y = H-sz; y < H; y++) for (let x = W-sz-2; x < W; x++) {
+    if (y>=0&&x>=0 && map[y][x] !== 1) map[y][x] = 0;
+  }
+  // Clear blocking terrain on path to ore patches (cols sz+2 through 17)
+  for (let y = 0; y < sz; y++) for (let x = sz+2; x <= 17; x++) {
+    if (y<H&&x<W) { var t = map[y][x]; if (t===2||t===4||t===6) map[y][x] = 0; }
+  }
+  for (let y = H-sz; y < H; y++) for (let x = W-18; x < W-sz-2; x++) {
+    if (y>=0&&x>=0&&x<W) { var t = map[y][x]; if (t===2||t===4||t===6) map[y][x] = 0; }
+  }
 }
 
 function _placeOre(map, W, H) {
-  // Multiple ore patches near each start + mid-map contested ore
+  // Ore near each start — close enough for harvesters to reach quickly
   var patches = [
-    [6,14],[6,15],[7,14],[7,15],[7,16], // player near
-    [H-7,W-16],[H-7,W-15],[H-6,W-16],[H-6,W-15],[H-6,W-14], // enemy near
+    // Player near (within clear zone)
+    [4,8],[4,9],[5,8],[5,9],[5,10],
+    // Player expansion ore (slightly further)
+    [6,14],[6,15],[7,14],[7,15],[7,16],
+    // Enemy near (within clear zone)
+    [H-5,W-10],[H-5,W-9],[H-6,W-10],[H-6,W-9],[H-6,W-11],
+    // Enemy expansion ore
+    [H-7,W-16],[H-7,W-15],[H-6,W-16],[H-6,W-15],[H-6,W-14],
     // Mid-map contested ore
     [Math.floor(H*0.4),Math.floor(W*0.45)],[Math.floor(H*0.4),Math.floor(W*0.45)+1],
     [Math.floor(H*0.4)+1,Math.floor(W*0.45)],[Math.floor(H*0.4)+1,Math.floor(W*0.45)+1],
