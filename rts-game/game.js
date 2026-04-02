@@ -272,6 +272,11 @@ function startGame(factionId, mapId, seed) {
 
   gameStarted = true;
   mcvDeployed = false;
+  // Set AI difficulty from dropdown
+  var diffDD = document.getElementById('difficulty-dropdown');
+  if (diffDD && typeof setAIDifficulty === 'function') setAIDifficulty(diffDD.value);
+  if (typeof aiState !== 'undefined') { aiState = 0; aiStateTimer = 0; }
+  if (typeof aiMemory !== 'undefined') { aiMemory.playerArmyComp = {light:0,medium:0,heavy:0,air:0}; aiMemory.playerAttackDir = null; aiMemory.playerPushCount = 0; }
   if (typeof initFog === 'function') initFog();
   if (typeof initAudio === 'function') initAudio();
   if (typeof initTechDerricks === 'function') initTechDerricks();
@@ -1825,8 +1830,9 @@ function update() {
     if (pings[pi].life <= 0) pings.splice(pi, 1);
   }
 
-  // Enemy AI fires superweapon
-  if (superweaponReady.enemy && gameTime % 60 === 0) {
+  // Enemy AI fires superweapon (handled by factionAI smart targeting now)
+  // Legacy fallback only if factionAI not loaded
+  if (typeof factionAI === 'undefined' && superweaponReady.enemy && gameTime % 60 === 0) {
     fireSuperweapon(TEAMS.ENEMY);
   }
 

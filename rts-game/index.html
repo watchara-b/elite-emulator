@@ -439,6 +439,15 @@ canvas { display: block; cursor: crosshair; }
         </div>
       </div>
     </div>
+    <div style="margin-top:8px;display:flex;align-items:center;gap:10px;justify-content:center;">
+      <span style="color:#aaa;font-size:13px;">🎯 ความยาก:</span>
+      <select id="difficulty-dropdown" onchange="if(typeof setAIDifficulty==='function')setAIDifficulty(this.value)" style="background:#12122a;border:1px solid #4cf;color:#fff;padding:4px 12px;border-radius:6px;font-size:13px;">
+        <option value="easy">Easy — AI ช้า สร้างน้อย</option>
+        <option value="normal" selected>Normal — AI สมดุล</option>
+        <option value="hard">Hard — AI ปรับตัว โจมตีเร็ว</option>
+      </select>
+    </div>
+    </div>
   </div>
 
   <!-- MULTIPLAYER LOBBY -->

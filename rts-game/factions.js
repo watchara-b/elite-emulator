@@ -114,7 +114,7 @@ switzerland: {
     support:    {hp:100,cost:280,icon:'📡',name:'Radar-Jamming Truck',speed:1.0,range:6,atk:0,atkSpeed:40,cat:'unit',from:'factory',req:'techlab',armorType:'medium'},
     saboteur:   {hp:50,cost:160,icon:'💀',name:'EMP-Rover',speed:2.0,range:3,atk:8,atkSpeed:25,cat:'unit',from:'barracks',dmgType:'antiInf',slow:0.5,armorType:'light'},
     battleship: {hp:550,cost:850,icon:'⚓',name:'Icebreaker Dreadnought',speed:0.4,range:7,atk:38,atkSpeed:65,cat:'unit',from:'helipad',req:'techlab',dmgType:'explosive',splash:2,armorType:'heavy'},
-    elite:      {hp:350,cost:1100,icon:'👑',name:'Cryo Commander',speed:0.8,range:6,atk:35,atkSpeed:50,cat:'unit',from:'barracks',req:'superweapon',dmgType:'antiInf',slow:0.5,splash:2,armorType:'heavy'},
+    elite:      {hp:350,cost:1100,icon:'❄',name:'Cryo Commander',speed:0.8,range:6,atk:35,atkSpeed:50,cat:'unit',from:'barracks',req:'superweapon',dmgType:'antiInf',slow:0.5,splash:2,armorType:'heavy'},
     hero:       {hp:400,cost:1200,icon:'👑',name:'Directorate Chairman',speed:1.0,range:7,atk:50,atkSpeed:40,cat:'unit',from:'barracks',req:'superweapon',dmgType:'armorPierce',splash:2,armorType:'heavy'},
   },
   buildOrder:['powerplant','barracks','refinery','wall','turret','radar','factory','helipad','techlab','superweapon','harvester','soldier','medic','engineer','scout','sniper','commando','tank','flamer','artillery','transport','air','gunboat','bomber','special','support','saboteur','battleship','elite','hero'],

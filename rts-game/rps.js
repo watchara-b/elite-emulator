@@ -13,7 +13,9 @@ const DAMAGE_MATRIX = {
 function getRPSMultiplier(dmgType, armorType) {
   if (!dmgType || !armorType) return 1;
   const row = DAMAGE_MATRIX[dmgType];
-  return row ? (row[armorType] || 1) : 1;
+  if (!row) return 1;
+  var val = row[armorType];
+  return val !== undefined ? val : 1;
 }
 
 // Directional Armor: rear attacks deal 150% damage, frontal attacks on heavy = 70%
