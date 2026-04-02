@@ -1,2 +1,0 @@
-# elite-emulator
-Demo1
